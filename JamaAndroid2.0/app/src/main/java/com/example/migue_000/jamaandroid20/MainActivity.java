@@ -85,18 +85,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        Intent intent = new Intent(this, Listas.class);
         Intent intent2 = new Intent(this, Login.class);
         int id = item.getItemId();
         String nombre = item.getTitle().toString();
-            //if( id == R.id.nav_logout){
-              //  startActivity(intent2);
-                //userlog = false;
-           // }
-            Intent intent = new Intent(this, Listas.class);
+        if(id == R.id.nav_home){
+
+        } else if (id == R.id.nav_logout) {
+            startActivity(intent2);
+        }else{
             List<Platillo> array = obtenerPlatillos(nombre);
             intent.putExtra("array", (Serializable) array);
             intent.putExtra("lista", (Serializable) llenarListView(list1, array));
             startActivity(intent);
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

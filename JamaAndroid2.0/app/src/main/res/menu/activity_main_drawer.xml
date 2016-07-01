@@ -3,35 +3,35 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_action_home"
             android:title="Inicio"/>
         <item
             android:id="@+id/nav_pasta"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_action_pasta"
             android:title="Pasta" />
         <item
             android:id="@+id/nav_hamburg"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_action_hamburguesa"
             android:title="Hamburguesa" />
         <item
             android:id="@+id/nav_marino"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_action_marino"
             android:title="Marino" />
         <item
             android:id="@+id/nav_criollo"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_action_criollo"
             android:title="Criollo" />
         <item
             android:id="@+id/nav_light"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_action_light"
             android:title="Light" />
         <item
             android:id="@+id/nav_postre"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_action_postre"
             android:title="Postre" />
         <item
             android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_action_logout"
             android:title="Log Out" />
     </group>
 </menu>
