@@ -8,13 +8,15 @@ import java.io.Serializable;
 public class Platillo implements Serializable {
     private int id;
     private String nombre, imagen, desc, tag;
+    private int precio;
 
-    public Platillo(int id, String nombre, String imagen, String desc, String tag) {
+    public Platillo(int id, String nombre, String imagen, String desc, String tag, int precio) {
         this.id = id;
         this.nombre = nombre;
         this.imagen = imagen;
         this.desc = desc;
         this.tag = tag;
+        this.precio = precio;
     }
 
     public int getId() {
@@ -54,6 +56,14 @@ public class Platillo implements Serializable {
 
     public void setTag(String tag){
         this.tag = tag;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
     }
 }
 
